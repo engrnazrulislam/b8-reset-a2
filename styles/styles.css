@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* 
+Large Device (Laptops/Desktop 992px and up)
+Small Device (Phones 600px and down)
+Table Responsive Optional
+No lorem ipsum and bad colon
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mulish;
+}
+
+body {
+    max-width: 90rem;
+    margin: auto;
+    width: calc(100% - 12rem);
+}
+
+/* General Styles */
+.btn-primary {
+    background-color: #FF5400;
+}
+
+/* Navigation Bar Styles */
+header {
+    margin: 0 auto;
+}
+
+nav {
+    margin-top: 3.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.siteTitleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.natural {
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.travel {
+    color: #FF5400;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.siteMenuContainer>button {
+    display: none;
+}
+
+.siteMenuContainer>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.siteMenuContainer>ul>li {
+    list-style: none;
+}
+
+.siteMenuContainer>ul>li>a {
+    text-decoration: none;
+    color: #424247;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.siteMenuContainer>ul>li>a:hover {
+    color: #FF5400;
+}
+
+/* Responsive Style Section */
+/* Mobile Device Responsive */
+@media only screen and (min-width: 0px) and (max-width:600px) {
+
+    .natural {
+        font-size: 1.3rem;
+    }
+
+    .travel {
+        font-size: 1.3rem;
+    }
+
+    .siteMenuContainer>button {
+        display: block;
+        width: 24px;
+        height: 24px;
+        border: none;
+        background-color: white;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .siteMenuContainer>ul {
+        display: none;
+    }
+    .siteMenuContainer>button:hover ul{
+        display: block;
+    }
+}
+/* Tablet device Responsive */
+@media only screen and (min-width:600px) and (max-width:992px){
+    .natural {
+        font-size: 1.3rem;
+    }
+
+    .travel {
+        font-size: 1.3rem;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
