@@ -215,40 +215,65 @@ li {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap:1.5rem;
+    gap: 1.5rem;
     justify-content: center;
     align-items: center;
 }
-.destinationImagesContainer>img{
+
+.destinationImagesContainer>img {
+    width: 100%;
 }
+
 .descriptionImage-1 {
     grid-column: 1/span 6;
     width: fit-content;
 }
-.descriptionImage-2{
+
+.descriptionImage-2 {
     grid-column: 7/span 5;
     width: fit-content;
 }
-.descriptionImage-3{
+
+.descriptionImage-3 {
     grid-column: 1/span 3;
     width: fit-content;
 }
-.descriptionImage-4{
+
+.descriptionImage-4 {
     grid-column: 5/span 3;
     width: fit-content;
 }
-.descriptionImage-5{
-    grid-column:10/span 2;
+
+.descriptionImage-5 {
+    grid-column: 10/span 2;
     width: fit-content;
 }
-.descriptionImage-6{
+
+.descriptionImage-6 {
     grid-column: 1/span 5;
     width: fit-content;
 }
-.descriptionImage-7{
+
+.descriptionImage-7 {
     grid-column: 6/span 6;
-    width:fit-content;
+    width: fit-content;
 }
+#descriptionImg{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#descriptionImg>h3 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* Responsive Style Section */
 /* Mobile Device Responsive */
 @media only screen and (min-width: 0px) and (max-width:600px) {
@@ -301,9 +326,24 @@ li {
     .bannerText>p {
         width: fit-content;
     }
+    .popularDescription>p,
+li{
+    width:fit-content;
+}
+    .destinationText>p {
+        width:fit-content;
+    }
 
     .popularTourSection {
         flex-direction: column;
+    }
+    .destinationImagesContainer{
+        grid-template-columns: 1fr;
+    }
+    .descriptionImage-1, .descriptionImage-2, .descriptionImage-3, .descriptionImage-4, .descriptionImage-5, .descriptionImage-6, .descriptionImage-7{
+        grid-column: 1/span 1;
+        margin: auto;
+        width:fit-content;
     }
 }
 
@@ -352,11 +392,11 @@ li {
     }
 
     .popularDescription>p {
-        width: 100%;
+        width: fit-content;
     }
 
     .popularDescription>ul {
-        width: 100%;
+        width: fit-content;
     }
 
     .popularImg {
