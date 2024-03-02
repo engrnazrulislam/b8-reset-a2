@@ -317,9 +317,10 @@ li {
 #card-2 {
     background: rgba(41, 206, 246, 0.05);
 }
-#card-3{
-    position:relative;
-    left:50%;
+
+#card-3 {
+    position: relative;
+    left: 50%;
 }
 
 .chooseUsCard>.card>p {
@@ -331,8 +332,46 @@ li {
     margin-bottom: 32px;
 }
 
+/* Place Section */
+.placeSectionContainer {
+    margin-top:6.25rem;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
 
+.placeDescription>h3 {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    width: 448px;
+}
 
+.placeDescription>p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.placeDescription>ul {
+    margin-bottom: 46px;
+    padding-left:24px;
+}
+
+.placeDescription>ul>li {
+    color: #131318;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.video>iframe {
+    width: 610px;
+    height: 424px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #131318 -31.96%, rgba(19, 19, 24, 0.00) 100%);
+}
 /* Responsive Style Section */
 /* Mobile Device Responsive */
 @media only screen and (min-width: 0px) and (max-width:600px) {
@@ -414,15 +453,24 @@ li {
         margin: auto;
         width: fit-content;
     }
-    .chooseUsCard{
+
+    .chooseUsCard {
         grid-template-columns: 1fr;
     }
-    #card-3{
+
+    #card-3 {
         position: unset;
-        margin:auto;
+        margin: auto;
     }
-    .chooseUsText>p{
+
+    .chooseUsText>p {
         width: fit-content;
+    }
+    .placeSectionContainer{
+        flex-direction: column;
+    }
+    .video>iframe {
+        width: 550px;
     }
 }
 
@@ -481,9 +529,11 @@ li {
     .popularImg {
         width: max-content;
     }
+
     .destinationImagesContainer {
         grid-template-columns: 1fr;
     }
+
     .descriptionImage-1,
     .descriptionImage-2,
     .descriptionImage-3,
@@ -495,14 +545,22 @@ li {
         margin: auto;
         width: fit-content;
     }
-    .chooseUsCard{
+
+    .chooseUsCard {
         grid-template-columns: 1fr;
     }
-    #card-3{
+
+    #card-3 {
         position: unset;
-        margin:auto;
     }
-    .chooseUsText>p{
+
+    .chooseUsText>p {
         width: fit-content;
+    }
+    .placeSectionContainer{
+        flex-direction: column;
+    }
+    .video>iframe {
+        width: 610px;
     }
 }
