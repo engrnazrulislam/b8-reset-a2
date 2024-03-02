@@ -116,7 +116,9 @@ nav {
     gap: 1.5rem;
 }
 
-#whereGo, #when, #selectType {
+#whereGo,
+#when,
+#selectType {
     width: 10.875rem;
     height: 3.25rem;
     border-radius: 8px;
@@ -126,6 +128,7 @@ nav {
     font-size: 1rem;
     font-weight: 400;
 }
+
 .bannerText {
     text-align: center;
 }
@@ -148,13 +151,47 @@ nav {
 
 }
 
+/* Our Popular Tour Section */
+.popularTourSection {
+    margin-top: 6.25rem;
+    display: flex;
+    justify-content: center;
+    gap:24px;
+}
+
+.popularDescription>h3 {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.popularDescription>p,
+li {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+.popularDescription>p{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 36rem;
+}
+.popularDescription>ul{
+    width: 32.81rem;
+    padding-left:1.5rem;
+}
+.popularImg{
+    width:33.75rem;
+}
 /* Responsive Style Section */
 /* Mobile Device Responsive */
 @media only screen and (min-width: 0px) and (max-width:600px) {
-    body{
-        width:100%;
-        padding:2rem;
+    body {
+        width: 100%;
+        padding: 2rem;
     }
+
     .natural {
         font-size: 1.3rem;
     }
@@ -183,11 +220,11 @@ nav {
 
     /* Banner Responsive */
     .bannerSectionContainer {
-        height:40rem;
+        height: 40rem;
     }
 
     .bannerText>h1 {
-        font-size:5vw;
+        font-size: 5vw;
     }
 
     .bannerObject form {
@@ -199,14 +236,18 @@ nav {
     .bannerText>p {
         width: fit-content;
     }
+    .popularTourSection{
+        flex-direction: column;
+    }
 }
 
 /* Tablet device Responsive */
 @media only screen and (min-width:600px) and (max-width:992px) {
-    body{
-        width:100%;
-        padding:2.5rem;
+    body {
+        width: 100%;
+        padding: 2.5rem;
     }
+
     .natural {
         font-size: 1.3rem;
     }
@@ -218,21 +259,37 @@ nav {
     nav {
         flex-direction: column;
     }
+
     .bannerSectionContainer {
-        height:40rem;
-    }
-    .bannerObject form {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-    }
-    .bannerText>h1 {
-        font-size:5vw;
+        height: 40rem;
     }
 
     .bannerObject form {
         flex-direction: column;
         align-items: center;
         gap: 0.5rem;
+    }
+
+    .bannerText>h1 {
+        font-size: 5vw;
+    }
+
+    .bannerObject form {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .popularTourSection{
+        flex-direction: column;
+        align-items: center;
+    }
+    .popularDescription>p{
+        width: 100%;
+    }
+    .popularDescription>ul{
+        width: 100%;
+    }
+    .popularImg{
+        width:max-content;
     }
 }
