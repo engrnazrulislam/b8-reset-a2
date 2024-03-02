@@ -258,7 +258,8 @@ li {
     grid-column: 6/span 6;
     width: fit-content;
 }
-#descriptionImg{
+
+#descriptionImg {
     position: relative;
     text-align: center;
     color: white;
@@ -273,6 +274,64 @@ li {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* Why Choose Us Section */
+.chooseUsText {
+    margin-top: 6.25rem;
+}
+
+.chooseUsText>h3 {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.chooseUsText>p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    width: 643px;
+    margin: auto;
+}
+
+.chooseUsCard {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 24px;
+}
+
+.chooseUsCard>.card {
+    width: 573px;
+    height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 32px;
+}
+
+#card-2 {
+    background: rgba(41, 206, 246, 0.05);
+}
+#card-3{
+    position:relative;
+    left:50%;
+}
+
+.chooseUsCard>.card>p {
+    margin-top: 16px;
+}
+
+.chooseUsCard>.card>img {
+    width: 8%;
+    margin-bottom: 32px;
+}
+
+
 
 /* Responsive Style Section */
 /* Mobile Device Responsive */
@@ -312,9 +371,11 @@ li {
     .bannerSectionContainer {
         height: 40rem;
     }
+
     .bannerText>h1 {
         font-size: 5vw;
     }
+
     .bannerObject form {
         flex-direction: column;
         align-items: center;
@@ -324,24 +385,40 @@ li {
     .bannerText>p {
         width: fit-content;
     }
+
     .popularDescription>p,
-li{
-    width:fit-content;
-}
+    li {
+        width: fit-content;
+    }
+
     .destinationText>p {
-        width:fit-content;
+        width: fit-content;
     }
 
     .popularTourSection {
         flex-direction: column;
     }
-    .destinationImagesContainer{
+
+    .destinationImagesContainer {
         grid-template-columns: 1fr;
     }
-    .descriptionImage-1, .descriptionImage-2, .descriptionImage-3, .descriptionImage-4, .descriptionImage-5, .descriptionImage-6, .descriptionImage-7{
+
+    .descriptionImage-1,
+    .descriptionImage-2,
+    .descriptionImage-3,
+    .descriptionImage-4,
+    .descriptionImage-5,
+    .descriptionImage-6,
+    .descriptionImage-7 {
         grid-column: 1/span 1;
         margin: auto;
-        width:fit-content;
+        width: fit-content;
+    }
+    .chooseUsCard{
+        grid-template-columns: 1fr;
+    }
+    #card-3{
+        margin:auto;
     }
 }
 
