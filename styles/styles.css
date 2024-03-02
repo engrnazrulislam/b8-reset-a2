@@ -418,7 +418,11 @@ li {
         grid-template-columns: 1fr;
     }
     #card-3{
+        position: unset;
         margin:auto;
+    }
+    .chooseUsText>p{
+        width: fit-content;
     }
 }
 
@@ -476,5 +480,29 @@ li {
 
     .popularImg {
         width: max-content;
+    }
+    .destinationImagesContainer {
+        grid-template-columns: 1fr;
+    }
+    .descriptionImage-1,
+    .descriptionImage-2,
+    .descriptionImage-3,
+    .descriptionImage-4,
+    .descriptionImage-5,
+    .descriptionImage-6,
+    .descriptionImage-7 {
+        grid-column: 1/span 1;
+        margin: auto;
+        width: fit-content;
+    }
+    .chooseUsCard{
+        grid-template-columns: 1fr;
+    }
+    #card-3{
+        position: unset;
+        margin:auto;
+    }
+    .chooseUsText>p{
+        width: fit-content;
     }
 }
