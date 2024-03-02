@@ -267,7 +267,7 @@ li {
 
 #descriptionImg>h3 {
     text-align: center;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 800;
     position: absolute;
     top: 50%;
@@ -283,7 +283,7 @@ li {
 .chooseUsText>h3 {
     color: #131318;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
 }
@@ -291,27 +291,27 @@ li {
 .chooseUsText>p {
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    width: 643px;
+    width: 40.18rem;
     margin: auto;
 }
 
 .chooseUsCard {
-    margin-top: 48px;
+    margin-top: 3rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .chooseUsCard>.card {
-    width: 573px;
-    height: 284px;
-    border-radius: 16px;
+    width: 35.8125rem;
+    height: 17.75rem;
+    border-radius: 1rem;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
-    padding: 32px;
+    padding: 2rem;
 }
 
 #card-2 {
@@ -324,54 +324,137 @@ li {
 }
 
 .chooseUsCard>.card>p {
-    margin-top: 16px;
+    margin-top: 1rem;
 }
 
 .chooseUsCard>.card>img {
     width: 8%;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 /* Place Section */
 .placeSectionContainer {
-    margin-top:6.25rem;
+    margin-top: 6.25rem;
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .placeDescription>h3 {
     color: #131318;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 800;
-    margin-bottom: 24px;
-    width: 448px;
+    margin-bottom: 1.5rem;
+    width: 28rem;
 }
 
 .placeDescription>p {
     color: #5A5A5D;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .placeDescription>ul {
-    margin-bottom: 46px;
-    padding-left:24px;
+    margin-bottom: 2.875rem;
+    padding-left: 1.5rem;
 }
 
 .placeDescription>ul>li {
     color: #131318;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
 }
 
 .video>iframe {
-    width: 610px;
-    height: 424px;
-    border-radius: 16px;
+    width: 38.125rem;
+    height: 26.5rem;
+    border-radius: 1rem;
     background: linear-gradient(180deg, #131318 -31.96%, rgba(19, 19, 24, 0.00) 100%);
 }
+
+/* News Letter Section */
+.newsLetterSection {
+    margin-top: 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.newsLetterForm>h3 {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.newsLetterForm>p {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    margin-bottom: 3rem;
+}
+
+.newsLetterForm {
+    width: 29.625rem;
+    height: 26.375rem;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+}
+
+.newsLetterForm>form>input {
+    width: 24.56rem;
+    height: 3.25rem;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+
+.btn-subscribe {
+    margin-top: 1.5rem;
+    width: 24.56rem;
+}
+
+.newsLetterImage {
+    width: 42rem;
+    height: 26.375rem;
+    width: fit-content;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.saveCard {
+    width: 20.25rem;
+    height: 7.5rem;
+    transform: rotate(-19.628deg);
+    border-radius: 1rem;
+    background: #FF5400;
+    position: relative;
+    left: 72.5%;
+    bottom: 10.62rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.saveCard>p {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.saveCard>h3 {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
 /* Responsive Style Section */
 /* Mobile Device Responsive */
 @media only screen and (min-width: 0px) and (max-width:600px) {
@@ -466,11 +549,27 @@ li {
     .chooseUsText>p {
         width: fit-content;
     }
-    .placeSectionContainer{
+
+    .placeSectionContainer {
         flex-direction: column;
     }
+
     .video>iframe {
-        width: 550px;
+        width: 34rem;
+    }
+
+    .newsLetterSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsLetterImage>img {
+        width: 30rem;
+
+    }
+    .saveCard {
+        left: 32.5%;
+        bottom: 18rem;
     }
 }
 
@@ -550,6 +649,10 @@ li {
         grid-template-columns: 1fr;
     }
 
+    .chooseUsCard>.card {
+        width: 100%;
+    }
+
     #card-3 {
         position: unset;
     }
@@ -557,10 +660,26 @@ li {
     .chooseUsText>p {
         width: fit-content;
     }
-    .placeSectionContainer{
+
+    .placeSectionContainer {
         flex-direction: column;
+        align-items: center;
     }
+
     .video>iframe {
         width: 610px;
+    }
+
+    .newsLetterSection {
+        flex-direction: column;
+       align-items: center;
+    }
+    .newsLetterImage>img {
+        width: 30rem;
+
+    }
+    .saveCard {
+        left: 38%;
+        bottom: 18rem;
     }
 }
