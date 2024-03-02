@@ -156,7 +156,7 @@ nav {
     margin-top: 6.25rem;
     display: flex;
     justify-content: center;
-    gap:24px;
+    gap: 24px;
 }
 
 .popularDescription>h3 {
@@ -172,17 +172,82 @@ li {
     font-weight: 400;
     line-height: 1.625rem;
 }
-.popularDescription>p{
+
+.popularDescription>p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     width: 36rem;
 }
-.popularDescription>ul{
+
+.popularDescription>ul {
     width: 32.81rem;
-    padding-left:1.5rem;
+    padding-left: 1.5rem;
 }
-.popularImg{
-    width:33.75rem;
+
+.popularImg {
+    width: 33.75rem;
+}
+
+/* Choose Your Destination Section */
+.destinationText {
+    margin-top: 6.25rem;
+    text-align: center;
+}
+
+.destinationText>h3 {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.destinationText>p {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    width: 40rem;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.destinationImagesContainer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap:1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.destinationImagesContainer>img{
+}
+.descriptionImage-1 {
+    grid-column: 1/span 6;
+    width: fit-content;
+}
+.descriptionImage-2{
+    grid-column: 7/span 5;
+    width: fit-content;
+}
+.descriptionImage-3{
+    grid-column: 1/span 3;
+    width: fit-content;
+}
+.descriptionImage-4{
+    grid-column: 5/span 3;
+    width: fit-content;
+}
+.descriptionImage-5{
+    grid-column:10/span 2;
+    width: fit-content;
+}
+.descriptionImage-6{
+    grid-column: 1/span 5;
+    width: fit-content;
+}
+.descriptionImage-7{
+    grid-column: 6/span 6;
+    width:fit-content;
 }
 /* Responsive Style Section */
 /* Mobile Device Responsive */
@@ -236,7 +301,8 @@ li {
     .bannerText>p {
         width: fit-content;
     }
-    .popularTourSection{
+
+    .popularTourSection {
         flex-direction: column;
     }
 }
@@ -279,17 +345,21 @@ li {
         align-items: center;
         gap: 0.5rem;
     }
-    .popularTourSection{
+
+    .popularTourSection {
         flex-direction: column;
         align-items: center;
     }
-    .popularDescription>p{
+
+    .popularDescription>p {
         width: 100%;
     }
-    .popularDescription>ul{
+
+    .popularDescription>ul {
         width: 100%;
     }
-    .popularImg{
-        width:max-content;
+
+    .popularImg {
+        width: max-content;
     }
 }
