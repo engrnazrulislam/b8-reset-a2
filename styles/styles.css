@@ -455,6 +455,47 @@ li {
     font-weight: 800;
 }
 
+/* Footer Section */
+footer {
+    height: 31.375rem;
+    background: rgba(19, 19, 24, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerHeaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footerHeader {
+    display: flex;
+}
+.footerHeaderContainer>p {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    width: 48rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.sociaIcon{
+    margin-top:2rem;
+    display: flex;
+    gap:1.8rem;
+}
+.copyRights{
+    margin-top:3.125rem;
+    padding-top:3.125rem;
+    border-top: 1px solid rgba(19, 19, 24, 0.10);
+    width: 54.5rem;
+    text-align: center;
+}
+
 /* Responsive Style Section */
 /* Mobile Device Responsive */
 @media only screen and (min-width: 0px) and (max-width:600px) {
@@ -567,9 +608,16 @@ li {
         width: 30rem;
 
     }
+
     .saveCard {
         left: 32.5%;
         bottom: 18rem;
+    }
+    .footerHeaderContainer>p{
+        width: fit-content;
+    }
+    .copyRights{
+        width:fit-content;
     }
 }
 
@@ -672,14 +720,22 @@ li {
 
     .newsLetterSection {
         flex-direction: column;
-       align-items: center;
+        align-items: center;
     }
+
     .newsLetterImage>img {
         width: 30rem;
 
     }
+
     .saveCard {
         left: 38%;
         bottom: 18rem;
+    }
+    .footerHeaderContainer>p{
+        width: fit-content;
+    }
+    .copyRights{
+        width:fit-content;
     }
 }
