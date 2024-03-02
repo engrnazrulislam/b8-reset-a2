@@ -22,6 +22,14 @@ body {
 /* General Styles */
 .btn-primary {
     background-color: #FF5400;
+    color: #FFF;
+    width: 10.875rem;
+    height: 3.25rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 /* Navigation Bar Styles */
@@ -81,6 +89,87 @@ nav {
     color: #FF5400;
 }
 
+/* Banner Section Styles 
+*/
+.bannerSectionContainer {
+    margin-top: 3.125rem;
+    border-radius: 1rem;
+    width: 73.125rem;
+    height: 31.25rem;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../images/banner.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bannerObject {
+    padding: 1rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.bannerObject form {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#whereGo {
+    width: 10.875rem;
+    height: 3.25rem;
+    border-radius: 8px;
+    background: #FFF;
+    border: none;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#when {
+    width: 10.875rem;
+    height: 3.25rem;
+    border-radius: 8px;
+    background: #FFF;
+    border: none;
+    padding: 1rem 1rem;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#selectType {
+    width: 10.875rem;
+    height: 3.25rem;
+    border-radius: 8px;
+    background: #FFF;
+    padding: 1rem 1rem;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.bannerText {
+    text-align: center;
+}
+
+.bannerText>h1 {
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.bannerText>p {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    width: 42.25rem;
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+
+}
+
 /* Responsive Style Section */
 /* Mobile Device Responsive */
 @media only screen and (min-width: 0px) and (max-width:600px) {
@@ -102,15 +191,37 @@ nav {
         font-weight: 700;
         cursor: pointer;
     }
+
     .siteMenuContainer>ul {
         display: none;
     }
-    .siteMenuContainer>button:hover ul{
+
+    .siteMenuContainer>button:hover ul {
         display: block;
     }
+
+    /* Banner Responsive */
+    .bannerSectionContainer {
+        width: 335px;
+        height: 483px;
+    }
+
+    .bannerText>h1 {
+        font-size: 1.375rem;
+    }
+
+    .bannerObject form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bannerText>p {
+        width: fit-content;
+    }
 }
+
 /* Tablet device Responsive */
-@media only screen and (min-width:600px) and (max-width:992px){
+@media only screen and (min-width:600px) and (max-width:992px) {
     .natural {
         font-size: 1.3rem;
     }
@@ -118,7 +229,8 @@ nav {
     .travel {
         font-size: 1.3rem;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
 }
