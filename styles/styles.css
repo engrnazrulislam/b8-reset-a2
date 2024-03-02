@@ -565,7 +565,12 @@ footer {
     .destinationImagesContainer {
         grid-template-columns: 1fr;
     }
-
+    .gridImg{
+        width:37rem;
+        height:20rem;
+        object-fit: cover;
+        padding:1rem;
+    }
     .descriptionImage-1,
     .descriptionImage-2,
     .descriptionImage-3,
@@ -680,7 +685,12 @@ footer {
     .destinationImagesContainer {
         grid-template-columns: 1fr;
     }
-
+    .gridImg{
+        width:40rem;
+        height:24rem;
+        object-fit: cover;
+        padding:1rem;
+    }
     .descriptionImage-1,
     .descriptionImage-2,
     .descriptionImage-3,
