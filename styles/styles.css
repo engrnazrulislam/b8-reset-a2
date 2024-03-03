@@ -565,11 +565,17 @@ footer {
     .destinationImagesContainer {
         grid-template-columns: 1fr;
     }
-    .gridImg{
-        width:37rem;
+    #descriptionImg{
+        width:36rem;
         height:20rem;
+        border-radius: 1rem;
         object-fit: cover;
-        padding:1rem;
+    }
+    .gridImg{
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        object-fit:cover;
     }
     .descriptionImage-1,
     .descriptionImage-2,
@@ -685,11 +691,16 @@ footer {
     .destinationImagesContainer {
         grid-template-columns: 1fr;
     }
-    .gridImg{
+    #descriptionImg{
         width:40rem;
         height:24rem;
+        border-radius: 1rem;
+    }
+    .gridImg{
+        width:100%;
+        height:100%;
         object-fit: cover;
-        padding:1rem;
+        border-radius: 1rem;
     }
     .descriptionImage-1,
     .descriptionImage-2,
