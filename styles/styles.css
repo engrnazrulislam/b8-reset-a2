@@ -429,8 +429,10 @@ li {
 }
 
 .saveCard {
-    width: 20.25rem;
-    height: 7.5rem;
+    max-width: 20.25rem;
+    width:100%;
+    max-height: 7.5rem;
+    height:100%;
     transform: rotate(-19.628deg);
     border-radius: 1rem;
     background: #FF5400;
@@ -471,9 +473,11 @@ footer {
     align-items: center;
     flex-direction: column;
 }
+
 .footerHeader {
     display: flex;
 }
+
 .footerHeaderContainer>p {
     color: #5A5A5D;
     font-size: 1rem;
@@ -483,14 +487,16 @@ footer {
     text-align: center;
     margin-top: 1.5rem;
 }
-.sociaIcon{
-    margin-top:2rem;
+
+.sociaIcon {
+    margin-top: 2rem;
     display: flex;
-    gap:1.8rem;
+    gap: 1.8rem;
 }
-.copyRights{
-    margin-top:3.125rem;
-    padding-top:3.125rem;
+
+.copyRights {
+    margin-top: 3.125rem;
+    padding-top: 3.125rem;
     border-top: 1px solid rgba(19, 19, 24, 0.10);
     width: 54.5rem;
     text-align: center;
@@ -551,32 +557,48 @@ footer {
 
     .popularDescription>p,
     li {
-        width: fit-content;
+        max-width: 37rem;
+        width: 100%;
     }
 
     .destinationText>p {
-        width: fit-content;
+        max-width: 37rem;
+        width: 100%;
     }
 
     .popularTourSection {
         flex-direction: column;
     }
 
+    .popularImg {
+        max-width: 37rem;
+        width: 100%;
+    }
+
+    .popularImg>img {
+        width: 100%;
+        object-fit: cover;
+    }
+
     .destinationImagesContainer {
         grid-template-columns: 1fr;
     }
-    #descriptionImg{
-        width:36rem;
-        height:20rem;
+
+    #descriptionImg {
+        max-width: 36rem;
+        width: 100%;
+        max-height: 20rem;
+        height: 100%;
         border-radius: 1rem;
-        object-fit: cover;
     }
-    .gridImg{
+
+    .gridImg {
         width: 100%;
         height: 100%;
         border-radius: 1rem;
-        object-fit:cover;
+        object-fit: cover;
     }
+
     .descriptionImage-1,
     .descriptionImage-2,
     .descriptionImage-3,
@@ -607,7 +629,8 @@ footer {
     }
 
     .video>iframe {
-        width: 34rem;
+        max-width: 34rem;
+        width: 100%;
     }
 
     .newsLetterSection {
@@ -615,20 +638,33 @@ footer {
         align-items: center;
     }
 
-    .newsLetterImage>img {
-        width: 30rem;
+    .newsLetterImage {
+        max-width: 30rem;
+        width: 100%;
+        border-radius: 1rem;
+    }
 
+    .newsLetterImage>img {
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        border-radius: 1rem;
     }
 
     .saveCard {
-        left: 32.5%;
-        bottom: 18rem;
+        margin:auto;
+        margin-top:1.5rem;
+        left:15%;
     }
-    .footerHeaderContainer>p{
+    footer{
+        margin-top: 6.25rem;
+    }
+    .footerHeaderContainer>p {
         width: fit-content;
     }
-    .copyRights{
-        width:fit-content;
+
+    .copyRights {
+        width: fit-content;
     }
 }
 
@@ -685,23 +721,34 @@ footer {
     }
 
     .popularImg {
-        width: max-content;
+        max-width: 60rem;
+        width: 100%;
+    }
+
+    .popularImg>img {
+        width: 100%;
+        object-fit: cover;
     }
 
     .destinationImagesContainer {
         grid-template-columns: 1fr;
     }
-    #descriptionImg{
-        width:40rem;
-        height:24rem;
+
+    #descriptionImg {
+        max-width: 60rem;
+        width: 100%;
+        max-height: 42rem;
+        height: 100%;
         border-radius: 1rem;
     }
-    .gridImg{
-        width:100%;
-        height:100%;
+
+    .gridImg {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         border-radius: 1rem;
     }
+
     .descriptionImage-1,
     .descriptionImage-2,
     .descriptionImage-3,
@@ -736,27 +783,47 @@ footer {
     }
 
     .video>iframe {
-        width: 610px;
+        max-width: 60rem;
     }
 
     .newsLetterSection {
         flex-direction: column;
         align-items: center;
     }
+    .newsLetterForm{
+        max-width:60rem;
+        width:100%;
+    }
+
+    .newsLetterImage {
+        max-width: 60rem;
+        width: 100%;
+        border-radius: 1rem;
+    }
 
     .newsLetterImage>img {
-        width: 30rem;
-
+        width:100%;
+        object-fit: cover;
+        border-radius: 1rem;
     }
-
     .saveCard {
-        left: 38%;
-        bottom: 18rem;
+        margin:auto;
+        margin-top:1.5rem;
+        max-width:20.25rem;
+        width:100%;
+        max-height: 7.5rem;
+        height:100%;
+        left:31.5%;
+        bottom:1rem;
     }
-    .footerHeaderContainer>p{
+    footer{
+        margin-top:6.25rem;
+    }
+    .footerHeaderContainer>p {
         width: fit-content;
     }
-    .copyRights{
-        width:fit-content;
+
+    .copyRights {
+        width: fit-content;
     }
 }
