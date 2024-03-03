@@ -176,11 +176,14 @@ li {
 .popularDescription>p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    width: 36rem;
+    max-width: 36rem;
+    width:100%;
+
 }
 
 .popularDescription>ul {
-    width: 32.81rem;
+    max-width: 32.81rem;
+    width:100%;
     padding-left: 1.5rem;
 }
 
@@ -343,10 +346,11 @@ li {
 
 .placeDescription>h3 {
     color: #131318;
-    font-size: 2.5rem;
+    font-size: 2vw;
     font-weight: 800;
     margin-bottom: 1.5rem;
-    width: 28rem;
+    max-width: 28rem;
+    width:100%;
 }
 
 .placeDescription>p {
@@ -453,7 +457,7 @@ li {
     border-radius: 1rem;
     background-image: url('../images/Group\ 39.png');
     background-repeat: none;
-    background-size: cover;
+    background-size: 100% 100%;
     margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
@@ -761,6 +765,9 @@ footer {
 
     .placeSectionContainer {
         flex-direction: column;
+    }
+    .placeDescription>h3{
+        font-size:1vw;
     }
 
     .video>iframe {
