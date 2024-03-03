@@ -778,6 +778,16 @@ footer {
     .newsLetterSection {
         flex-direction: column;
         align-items: center;
+        width:100%;
+    }
+    .newsLetterForm{
+        width:100%;
+    }
+    .newsLetterForm>form>input{
+        width:100%;
+    }
+    .btn-subscribe{
+        width:100%;
     }
 
     .newsLetterImage {
