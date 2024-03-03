@@ -767,7 +767,7 @@ footer {
         flex-direction: column;
     }
     .placeDescription>h3{
-        font-size:1vw;
+        font-size:5vw;
     }
 
     .video>iframe {
